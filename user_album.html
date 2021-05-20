@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./show_album.js"></script>
+    <title>User Album</title>
+</head>
+<body>
+    <p id="user_name" ></p>
+    <center style="max-width: 70%;margin: auto;">
+    <div>
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" required>
+    </div>
+    <button type="submit" class="btn btn-primary form-control add_ablum">Add Album</button>
+    </div>
+    </center>
+    <br><br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Album Id</th>
+                <th>Title</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="t_body">
+        </tbody>
+    </table>
+</body>
+</html>
